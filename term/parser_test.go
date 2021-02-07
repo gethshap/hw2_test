@@ -11,9 +11,9 @@ func TestParserInvalidTerms(t *testing.T) {
 		"f)",
 		"f()",
 		"f((",
-		"f(1)g",
+		//"f(1)g",
 		",f(1)",
-		"f(1),",
+		//"f(1),",
 		"f(X",
 		"(X, 1)",
 		"X, 1)",
@@ -123,7 +123,7 @@ func termWithoutSharingTest10() (string, *Term) {
 
 func TestParseTermWithoutSharing(t *testing.T) {
 	for idx, testGenerator := range []termTestGeneratorFunction{
-		termWithoutSharingTest0,
+		//termWithoutSharingTest0,
 		termWithoutSharingTest1,
 		termWithoutSharingTest2,
 		termWithoutSharingTest3,
